@@ -1,8 +1,7 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
-import asyncio
 
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "8353236328:AAGQFMU9WUolFr1W6edd9oL7dRDGFa1SwRE"
 
 utm_link = "https://consultant.net.ua/partner/am_ukrain?utm_source=telegram_mell&utm_medium=telegram_mell&utm_campaign=telegram_mell&utm_id=mell&utm_term=telegram_mell&utm_content=telegram_mell"
 
@@ -30,4 +29,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
