@@ -2,7 +2,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 import asyncio
 
-TOKEN = "8353236328:AAGQFMU9WUolFr1W6edd9oL7dRDGFa1SwRE"
+TOKEN = "YOUR_BOT_TOKEN"
 
 utm_link = "https://consultant.net.ua/partner/am_ukrain?utm_source=telegram_mell&utm_medium=telegram_mell&utm_campaign=telegram_mell&utm_id=mell&utm_term=telegram_mell&utm_content=telegram_mell"
 
@@ -23,11 +23,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(welcome_text, reply_markup=reply_markup)
 
-async def main():
+def main():
     application = Application.builder().token(TOKEN).build()
     application.add_handler(CommandHandler("start", start))
-    await application.run_polling()
+    application.run_polling()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
 
