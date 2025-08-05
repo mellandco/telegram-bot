@@ -1,11 +1,6 @@
-import nest_asyncio
-nest_asyncio.apply()
-
-import asyncio
-import sys
-
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
+import asyncio
 
 TOKEN = "8353236328:AAGQFMU9WUolFr1W6edd9oL7dRDGFa1SwRE"
 
@@ -34,5 +29,5 @@ async def main():
     await application.run_polling()
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(main())
+    asyncio.run(main())
 
