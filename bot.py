@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 
 TOKEN = "8353236328:AAGQFMU9WUolFr1W6edd9oL7dRDGFa1SwRE"
 
-utm_link = "https://consultant.net.ua/partner/am_ukrain?utm_source=telegram_mell&utm_medium=telegram_mell&utm_campaign=telegram_mell&utm_id=mell&utm_term=telegram_mell&utm_content=telegram_mell"
+utm_link = "https://consultant.net.ua/partner/ukrain_am?utm_source=telegram_mell&utm_medium=telegram_mell&utm_campaign=telegram_mell&utm_id=mell&utm_term=telegram_mell&utm_content=telegram_mell"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("🌐 Перейти на сайт", url=utm_link)]]
@@ -29,3 +29,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
