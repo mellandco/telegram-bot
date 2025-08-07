@@ -1,7 +1,7 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "8353236328:AAGQFMU9WUolFr1W6edd9oL7dRDGFa1SwRE"
+TOKEN = "8323378299:AAFEWRyW_5fgGLYcBWqUbuEe-8SUF9UcxVE"
 
 utm_link = "https://consultant.net.ua/partner/ukrain_am?utm_source=telegram_mell&utm_medium=telegram_mell&utm_campaign=telegram_mell&utm_id=mell&utm_term=telegram_mell&utm_content=telegram_mell"
 
@@ -29,4 +29,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
